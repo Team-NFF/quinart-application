@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quinart/component/home_page/drawer/drawer_header.dart';
 import 'package:quinart/component/home_page/drawer/item_home.dart';
 import 'package:quinart/component/home_page/drawer/item_logout.dart';
-import 'package:quinart/component/home_page/drawer/divider.dart';
+import 'package:quinart/component/divider/white_divider.dart';
 
 class HomePageDrawer extends StatelessWidget {
   const HomePageDrawer({super.key});
@@ -16,7 +16,7 @@ class HomePageDrawer extends StatelessWidget {
           children: const <Widget>[
             HomePageDrawerHeader(),
             HomeDrawerItem(),
-            CustomDivider(),
+            WhiteDivider(),
             LogoutDrawerItem(),
           ],
         ),
