@@ -20,12 +20,13 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           icon: const Icon(
             Icons.article,
             color: Color(0xFF53a697),
-            size: 35,
+            size: 40,
           ),
           onPressed: () {
             Scaffold.of(context).openEndDrawer();
           },
         ),
+        const SizedBox(width: 8),
       ],
     );
   }
