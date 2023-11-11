@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quinart/component/home_page/drawer/drawer.dart';
+import 'package:quinart/component/home_page/header.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -20,8 +21,9 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(
-              Icons.menu,
+              Icons.article,
               color: Color(0xFF53a697),
+              size: 35,
             ),
             onPressed: () {
               Scaffold.of(context).openEndDrawer();
@@ -30,6 +32,11 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       endDrawer: const HomePageDrawer(),
+      body: const Stack(
+        children: [
+          HomePageHeader(),
+        ],
+      ),
     );
   }
 }

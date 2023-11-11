@@ -26,3 +26,4 @@ flutter:
   uses-material-design: true
   assets:
     - lib/assets/images/icon/only_rail-clear.png
+    - lib/assets/images/background/yanbaru_nature.JPG
