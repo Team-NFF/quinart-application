@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:quinart/view/home_page/home.dart';
 
 void main() {
   initializeDateFormatting('ja_JP');
@@ -9,6 +10,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,27 +20,6 @@ class MyApp extends StatelessWidget {
         textTheme:
             GoogleFonts.sawarabiGothicTextTheme(Theme.of(context).textTheme),
       ),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Scaffold(
-          appBar: AppBar(
-            backgroundColor: const Color(0xFF53a697),
-          ),
-          body: const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-            ),
-          ),
-        ),
-      ],
     );
   }
 }
