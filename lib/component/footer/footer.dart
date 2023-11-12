@@ -15,7 +15,10 @@ class HomePageFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(Icons.health_and_safety),
+                  icon: Icon(
+                    Icons.health_and_safety,
+                    color: Color(0xFF979999),
+                  ),
                   onPressed: null,
                 ),
               ],
@@ -24,7 +27,10 @@ class HomePageFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(Icons.home),
+                  icon: Icon(
+                    Icons.home,
+                    color: Color(0xFF979999),
+                  ),
                   onPressed: null,
                 ),
               ],
@@ -45,7 +51,10 @@ class HomePageFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(Icons.home),
+                  icon: Icon(
+                    Icons.home,
+                    color: Color(0xFF979999),
+                  ),
                   onPressed: null,
                 ),
               ],
@@ -54,7 +63,10 @@ class HomePageFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(Icons.home),
+                  icon: Icon(
+                    Icons.home,
+                    color: Color(0xFF979999),
+                  ),
                   onPressed: null,
                 ),
               ],
