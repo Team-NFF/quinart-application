@@ -33,6 +33,18 @@ class HomePageFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
+                  icon: Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
+                  onPressed: null,
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
                   icon: Icon(Icons.home),
                   onPressed: null,
                 ),
