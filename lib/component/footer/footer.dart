@@ -16,7 +16,7 @@ class HomePageFooter extends StatelessWidget {
               children: [
                 IconButton(
                   icon: Icon(
-                    Icons.health_and_safety,
+                    Icons.map,
                     color: Color(0xFF979999),
                   ),
                   onPressed: null,
@@ -28,7 +28,7 @@ class HomePageFooter extends StatelessWidget {
               children: [
                 IconButton(
                   icon: Icon(
-                    Icons.home,
+                    Icons.health_and_safety,
                     color: Color(0xFF979999),
                   ),
                   onPressed: null,
