@@ -31,14 +31,14 @@ class HomePageHeader extends StatelessWidget {
                 Text(
                   "やんばる くいな 様",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color(0xFFf9faf8),
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
                   "ユーザID: U-00000917",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color(0xFFf9faf8),
                     fontSize: 12,
                   ),
                 ),
