@@ -9,31 +9,30 @@ class HomePageDrawerHeader extends StatelessWidget {
       decoration: const BoxDecoration(
         color: Color(0xFF53a697),
       ),
-      child: Stack(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Positioned.fill(
-            child: Center(
-              child: Container(
-                padding: const EdgeInsets.all(8.0),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF408074),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: const Color(0xFFf9faf8)),
-                ),
-                child: const Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.account_circle, color: Colors.white, size: 40),
-                    SizedBox(width: 10),
-                    Text(
-                      'マイページ',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Color(0xFFf9faf8),
-                      ),
-                    ),
-                  ],
-                ),
+          const Icon(
+            Icons.account_circle,
+            color: Color(0xFFf9faf8),
+            size: 60,
+          ),
+          const SizedBox(height: 8),
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(32),
+              border: Border.all(
+                color: const Color(0xFFf9faf8),
+              ),
+              color: const Color(0xFF555656).withOpacity(0.5),
+            ),
+            child: const Text(
+              ' マイページ ',
+              style: TextStyle(
+                fontSize: 18,
+                color: Color(0xFFf9faf8),
               ),
             ),
           ),
