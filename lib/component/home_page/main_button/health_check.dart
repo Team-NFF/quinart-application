@@ -11,7 +11,9 @@ class HealthCheckButton extends StatelessWidget {
       right: 20,
       child: Center(
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            debugPrint("health check");
+          },
           child: Column(
             children: [
               Container(

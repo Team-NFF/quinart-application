@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MapButton extends StatelessWidget {
+class CallButton extends StatelessWidget {
   final double top;
   final double left;
   final double right;
 
-  const MapButton({
+  const CallButton({
     Key? key,
     required this.top,
     required this.left,
@@ -21,7 +21,7 @@ class MapButton extends StatelessWidget {
       child: Center(
         child: InkWell(
           onTap: () {
-            debugPrint("map");
+            debugPrint("call");
           },
           child: Container(
             width: 100,
@@ -44,12 +44,12 @@ class MapButton extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.map,
+                    Icons.call,
                     color: Color(0xFF004d00),
                     size: 48,
                   ),
                   Text(
-                    'マップ',
+                    '緊急通報',
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
