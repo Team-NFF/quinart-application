@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HomePageFooter extends StatelessWidget {
-  const HomePageFooter({super.key});
+class HomePageAdminFooter extends StatelessWidget {
+  const HomePageAdminFooter({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BottomAppBar(
+    return const BottomAppBar(
       child: SizedBox(
         height: 60,
         child: Row(
@@ -15,22 +15,32 @@ class HomePageFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: const Icon(
+                  icon: Icon(
                     Icons.map,
                     color: Color(0xFF979999),
                   ),
-                  onPressed: () {
-                    debugPrint("map");
-                  },
+                  onPressed: null,
                 ),
               ],
             ),
-            const Column(
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   icon: Icon(
-                    Icons.home,
+                    Icons.health_and_safety,
+                    color: Color(0xFF979999),
+                  ),
+                  onPressed: null,
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  icon: Icon(
+                    Icons.call,
                     color: Colors.white,
                   ),
                   onPressed: null,
@@ -41,13 +51,23 @@ class HomePageFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: const Icon(
-                    Icons.call,
+                  icon: Icon(
+                    Icons.home,
                     color: Color(0xFF979999),
                   ),
-                  onPressed: () {
-                    debugPrint("call");
-                  },
+                  onPressed: null,
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  icon: Icon(
+                    Icons.assignment_turned_in,
+                    color: Color(0xFF979999),
+                  ),
+                  onPressed: null,
                 ),
               ],
             ),
