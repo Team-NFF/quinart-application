@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quinart/view/map_page/map.dart';
 
 class MapButton extends StatelessWidget {
   final double top;
@@ -21,7 +22,10 @@ class MapButton extends StatelessWidget {
       child: Center(
         child: InkWell(
           onTap: () {
-            debugPrint("map");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MapScreen()),
+            );
           },
           child: Container(
             width: 100,

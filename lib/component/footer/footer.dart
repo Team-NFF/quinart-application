@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quinart/view/map_page/map.dart';
 
 class HomePageFooter extends StatelessWidget {
   const HomePageFooter({super.key});
@@ -20,7 +21,11 @@ class HomePageFooter extends StatelessWidget {
                     color: Color(0xFF979999),
                   ),
                   onPressed: () {
-                    debugPrint("map");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MapScreen()),
+                    );
                   },
                 ),
               ],
