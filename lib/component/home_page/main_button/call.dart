@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quinart/view/report_page/call.dart';
 
 class CallButton extends StatelessWidget {
   final double top;
@@ -21,7 +22,10 @@ class CallButton extends StatelessWidget {
       child: Center(
         child: InkWell(
           onTap: () {
-            debugPrint("call");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const ReportScreen()),
+            );
           },
           child: Container(
             width: 100,
