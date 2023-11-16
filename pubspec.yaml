@@ -18,6 +18,8 @@ dependencies:
   flutter_hooks:
   flutter_map:
   latlong2:
+  url_launcher:
+  slider_button:
 
 dev_dependencies:
   flutter_test:
