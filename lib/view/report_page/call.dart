@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
-import 'package:slider_button/slider_button.dart';
 import 'package:quinart/component/appbar/home_appbar.dart';
+import 'package:quinart/component/home_page/drawer/drawer.dart';
 import 'package:quinart/component/footer/footer.dart';
+import 'package:quinart/component/footer/home_button.dart';
+import 'package:quinart/component/slider_button/report_slider.dart';
 
 class ReportScreen extends StatefulWidget {
   const ReportScreen({super.key});
@@ -44,9 +46,12 @@ class ReportScreenState extends State<ReportScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const HomeAppBar(),
+      endDrawer: const HomePageDrawer(),
       body: Center(
-        child: SliderButton(
-          action: () {
+        child: ReportSliderButton(
+          isButtonExpanded: _isButtonExpanded,
+          animationController: _animationController,
+          onPressed: () {
             setState(() {
               _isButtonExpanded = !_isButtonExpanded;
               if (_isButtonExpanded) {
@@ -62,31 +67,10 @@ class ReportScreenState extends State<ReportScreen>
               Navigator.of(context).pop();
             }
           },
-          buttonColor: Colors.red,
-          label: const Text(
-            "スライドで緊急連絡",
-            style: TextStyle(
-              color: Color(0xff4a4a4a),
-              fontWeight: FontWeight.w500,
-              fontSize: 17,
-            ),
-          ),
-          icon: const Text(
-            "SOS",
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.w400,
-              fontSize: 24,
-            ),
-          ),
         ),
       ),
       bottomNavigationBar: const HomePageFooter(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF63a697),
-        child: const Icon(Icons.home),
-        onPressed: () {},
-      ),
+      floatingActionButton: const FooterHomeButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:quinart/component/appbar/home_appbar.dart';
+import 'package:quinart/component/home_page/drawer/drawer.dart';
 import 'package:quinart/component/footer/footer.dart';
+import 'package:quinart/component/footer/home_button.dart';
 
 class MapScreen extends StatelessWidget {
   const MapScreen({super.key});
@@ -11,6 +13,7 @@ class MapScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const HomeAppBar(),
+      endDrawer: const HomePageDrawer(),
       body: FlutterMap(
         options: const MapOptions(
           initialCenter: LatLng(26.526505783682545, 128.0300361181478),
@@ -24,11 +27,7 @@ class MapScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: const HomePageFooter(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF63a697),
-        child: const Icon(Icons.home),
-        onPressed: () {},
-      ),
+      floatingActionButton: const FooterHomeButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
