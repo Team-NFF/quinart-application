@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quinart/view/map_page/map.dart';
+import 'package:quinart/view/report_page/call.dart';
 
 class HomePageFooter extends StatelessWidget {
   const HomePageFooter({super.key});
@@ -51,7 +52,11 @@ class HomePageFooter extends StatelessWidget {
                     color: Color(0xFF979999),
                   ),
                   onPressed: () {
-                    debugPrint("call");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ReportScreen()),
+                    );
                   },
                 ),
               ],

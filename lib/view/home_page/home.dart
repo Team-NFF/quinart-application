@@ -6,16 +6,17 @@ import 'package:quinart/component/home_page/main_button/map.dart';
 import 'package:quinart/component/home_page/main_button/call.dart';
 import 'package:quinart/component/divider/green_divider.dart';
 import 'package:quinart/component/footer/footer.dart';
+import 'package:quinart/component/footer/home_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const HomeAppBar(),
-      endDrawer: const HomePageDrawer(),
-      body: const Stack(
+    return const Scaffold(
+      appBar: HomeAppBar(),
+      endDrawer: HomePageDrawer(),
+      body: Stack(
         children: [
           HomePageHeader(),
           MapButton(
@@ -36,12 +37,8 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: const HomePageFooter(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF63a697),
-        child: const Icon(Icons.home),
-        onPressed: () {},
-      ),
+      bottomNavigationBar: HomePageFooter(),
+      floatingActionButton: FooterHomeButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
