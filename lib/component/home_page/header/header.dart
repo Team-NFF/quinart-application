@@ -29,14 +29,14 @@ class HomePageHeader extends StatelessWidget {
             child: const Column(
               children: [
                 Text(
-                  "やんばる くいな 様",
+                  "ゲストユーザ" " 様",
                   style: TextStyle(
                     color: Color(0xFFf9faf8),
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
-                  "ユーザID: U-00000917",
+                  "ユーザID: G-00000917",
                   style: TextStyle(
                     color: Color(0xFFf9faf8),
                     fontSize: 12,
