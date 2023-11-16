@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quinart/view/rails_data_page/rails_list.dart';
 
 class HealthCheckButton extends StatelessWidget {
   const HealthCheckButton({super.key});
@@ -12,7 +13,10 @@ class HealthCheckButton extends StatelessWidget {
       child: Center(
         child: InkWell(
           onTap: () {
-            debugPrint("health check");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const RailsList()),
+            );
           },
           child: Column(
             children: [
