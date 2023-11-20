@@ -6,7 +6,7 @@ import 'package:quinart/component/home_page/main_button/health_check.dart';
 import 'package:quinart/component/home_page/main_button/map.dart';
 import 'package:quinart/component/home_page/main_button/call.dart';
 import 'package:quinart/component/divider/green_divider.dart';
-import 'package:quinart/component/footer/footer.dart';
+import 'package:quinart/component/footer/admin_footer.dart';
 
 class AdminHomeScreen extends StatelessWidget {
   const AdminHomeScreen({super.key});
@@ -24,7 +24,11 @@ class AdminHomeScreen extends StatelessWidget {
             left: 20,
             right: 240,
           ),
-          HealthCheckButton(),
+          HealthCheckButton(
+            top: 220,
+            left: 130,
+            right: 130,
+          ),
           CallButton(
             top: 220,
             left: 240,
@@ -38,7 +42,7 @@ class AdminHomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: const HomePageFooter(),
+      bottomNavigationBar: const HomePageAdminFooter(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color(0xFF63a697),
         child: const Icon(Icons.home),

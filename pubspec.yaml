@@ -20,6 +20,8 @@ dependencies:
   latlong2:
   url_launcher:
   slider_button:
+  flutter_map_marker_cluster:
+  photo_view:
 
 dev_dependencies:
   flutter_test:
@@ -31,3 +33,4 @@ flutter:
   assets:
     - lib/assets/images/icon/only_rail-clear.png
     - lib/assets/images/background/yanbaru_nature.JPG
+    - lib/assets/images/background/system.png

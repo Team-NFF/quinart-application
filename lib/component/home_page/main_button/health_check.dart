@@ -2,14 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:quinart/view/rails_data_page/rails_list.dart';
 
 class HealthCheckButton extends StatelessWidget {
-  const HealthCheckButton({super.key});
+  final double top;
+  final double left;
+  final double right;
+
+  const HealthCheckButton({
+    Key? key,
+    required this.top,
+    required this.left,
+    required this.right,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 220,
-      left: 20,
-      right: 20,
+      top: top,
+      left: left,
+      right: right,
       child: Center(
         child: InkWell(
           onTap: () {

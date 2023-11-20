@@ -37,7 +37,7 @@ class HomePageFooter extends StatelessWidget {
                 IconButton(
                   icon: Icon(
                     Icons.home,
-                    color: Colors.white,
+                    color: Colors.transparent,
                   ),
                   onPressed: null,
                 ),

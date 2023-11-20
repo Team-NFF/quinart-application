@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:quinart/view/map_page/map.dart';
+import 'package:quinart/view/rails_data_page/rails_list.dart';
+import 'package:quinart/view/report_page/call.dart';
+import 'package:quinart/view/system_check_page/system_check.dart';
 
 class HomePageAdminFooter extends StatelessWidget {
   const HomePageAdminFooter({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const BottomAppBar(
+    return BottomAppBar(
       child: SizedBox(
         height: 60,
         child: Row(
@@ -15,11 +19,18 @@ class HomePageAdminFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.map,
                     color: Color(0xFF979999),
                   ),
-                  onPressed: null,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MapScreen(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
@@ -27,21 +38,28 @@ class HomePageAdminFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.health_and_safety,
                     color: Color(0xFF979999),
                   ),
-                  onPressed: null,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const RailsList(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
-            Column(
+            const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   icon: Icon(
                     Icons.call,
-                    color: Colors.white,
+                    color: Colors.transparent,
                   ),
                   onPressed: null,
                 ),
@@ -51,11 +69,18 @@ class HomePageAdminFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(
-                    Icons.home,
+                  icon: const Icon(
+                    Icons.call,
                     color: Color(0xFF979999),
                   ),
-                  onPressed: null,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ReportScreen(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
@@ -63,11 +88,18 @@ class HomePageAdminFooter extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.assignment_turned_in,
                     color: Color(0xFF979999),
                   ),
-                  onPressed: null,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SystemCheckPage(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),

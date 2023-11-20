@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quinart/view/login_page/login.dart';
 
 class LoginDrawerItem extends StatelessWidget {
   const LoginDrawerItem({super.key});
@@ -14,7 +15,12 @@ class LoginDrawerItem extends StatelessWidget {
           color: Color(0xFFf9faf8),
         ),
       ),
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const LoginPage()),
+        );
+      },
     );
   }
 }
