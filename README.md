@@ -25,7 +25,7 @@
 |  :-:  | --- |
 | OS    | Windows 10 Pro |
 | IDE   | Visual Studio Code |
-| LANG  | Dart 3.2.0 (Flutter 3.16.0, DevTools 2.28.2) |
+| LANG  | Dart 3.2.0 ( Flutter 3.16.0, DevTools 2.28.2 ) |
 | PKG   | [pubspec.yaml](https://github.com/Team-NFF/quinart-application/blob/master/pubspec.yaml)の`dependencies`を参照 |
 | TEST  | Xperia Ace(Android 9) |
 
