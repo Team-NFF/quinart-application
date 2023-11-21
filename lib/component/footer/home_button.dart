@@ -8,7 +8,10 @@ class FooterHomeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       backgroundColor: const Color(0xFF63a697),
-      child: const Icon(Icons.home),
+      child: const Icon(
+        Icons.home,
+        color: Color(0xFFf9faf8),
+      ),
       onPressed: () {
         Navigator.push(
           context,
