@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quinart/view/home_page/home.dart';
+// import 'package:quinart/view/home_page/home.dart';
+import 'package:quinart/view/home_page/admin_home.dart';
 
 class FooterHomeButton extends StatelessWidget {
   const FooterHomeButton({super.key});
@@ -15,7 +16,7 @@ class FooterHomeButton extends StatelessWidget {
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const HomeScreen()),
+          MaterialPageRoute(builder: (context) => const AdminHomeScreen()),
         );
       },
     );
