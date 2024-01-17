@@ -20,17 +20,17 @@ class HomeScreen extends StatelessWidget {
         children: [
           HomePageHeader(),
           MapButton(
-            top: 220,
+            top: 235,
             left: 20,
             right: 170,
           ),
           CallButton(
-            top: 220,
+            top: 235,
             left: 170,
             right: 20,
           ),
           Positioned(
-            top: 335,
+            top: 345,
             left: 0,
             right: 0,
             child: GreenDivider(),
