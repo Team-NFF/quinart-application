@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quinart/component/home_page/drawer/drawer.dart';
 import 'package:quinart/component/home_page/header/admin_header.dart';
 import 'package:quinart/component/appbar/home_appbar.dart';
 import 'package:quinart/component/home_page/main_button/health_check.dart';
@@ -15,7 +14,6 @@ class AdminHomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const HomeAppBar(),
-      endDrawer: const HomePageDrawer(),
       body: const Stack(
         children: [
           HomePageAdminHeader(),

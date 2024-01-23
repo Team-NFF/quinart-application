@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../view/account_page/account_page.dart';
 
 class HomePageDrawerHeader extends StatelessWidget {
   const HomePageDrawerHeader({super.key});
@@ -19,11 +20,18 @@ class HomePageDrawerHeader extends StatelessWidget {
             size: 60,
           ),
           const SizedBox(height: 8),
-          Container(
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(32),
-              border: Border.all(
+          InkWell(
+            onTap: () {
+              Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MyPage()),
+            );
+            },
+            child: Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(32),
+                border: Border.all(
                 color: const Color(0xFFf9faf8),
               ),
               color: const Color(0xFF555656).withOpacity(0.5),
@@ -32,7 +40,8 @@ class HomePageDrawerHeader extends StatelessWidget {
               ' マイページ ',
               style: TextStyle(
                 fontSize: 18,
-                color: Color(0xFFf9faf8),
+                  color: Color(0xFFf9faf8),
+                ),
               ),
             ),
           ),

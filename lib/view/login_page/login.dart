@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                primary: const Color(0xFF53a697),
+                backgroundColor: const Color(0xFF53a697),
               ),
               child: const Text(
                 'ログイン',

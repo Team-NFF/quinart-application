@@ -34,22 +34,6 @@ class MapScreen extends StatelessWidget {
                   icon: const Icon(Icons.navigation),
                 )),
           )),
-      // Marker(
-      //   width: 40.0,
-      //   height: 50.0,
-      //   point: const LatLng(26.737943, 128.290088),
-      //   child: Builder(
-      //     builder: (ctx) => Container(
-      //       width: 60.0,
-      //       height: 30.0,
-      //       decoration: BoxDecoration(
-      //         color: Colors.red.withOpacity(0.5),
-      //         shape: BoxShape.rectangle,
-      //         border: Border.all(color: Colors.red, width: 2.0),
-      //       ),
-      //     ),
-      //   ),
-      // ),
     ];
 
     return Scaffold(

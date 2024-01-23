@@ -32,7 +32,7 @@ class MapButton extends StatelessWidget {
             height: 100,
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: const Color(0xFFf9faf8),
+              color: Colors.white,
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
