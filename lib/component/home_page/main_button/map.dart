@@ -7,11 +7,11 @@ class MapButton extends StatelessWidget {
   final double right;
 
   const MapButton({
-    Key? key,
+    super.key,
     required this.top,
     required this.left,
     required this.right,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class MapButton extends StatelessWidget {
             height: 100,
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: const Color(0xFFf9faf8),
+              color: Colors.white,
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(

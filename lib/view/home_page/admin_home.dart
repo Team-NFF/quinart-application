@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quinart/component/home_page/drawer/drawer.dart';
-import 'package:quinart/component/home_page/header/header.dart';
+import 'package:quinart/component/home_page/header/admin_header.dart';
 import 'package:quinart/component/appbar/home_appbar.dart';
 import 'package:quinart/component/home_page/main_button/health_check.dart';
 import 'package:quinart/component/home_page/main_button/map.dart';
@@ -15,27 +14,26 @@ class AdminHomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const HomeAppBar(),
-      endDrawer: const HomePageDrawer(),
       body: const Stack(
         children: [
-          HomePageHeader(),
+          HomePageAdminHeader(),
           MapButton(
-            top: 220,
+            top: 235,
             left: 20,
             right: 240,
           ),
           HealthCheckButton(
-            top: 220,
+            top: 235,
             left: 130,
             right: 130,
           ),
           CallButton(
-            top: 220,
+            top: 235,
             left: 240,
             right: 20,
           ),
           Positioned(
-            top: 335,
+            top: 345,
             left: 0,
             right: 0,
             child: GreenDivider(),
@@ -45,7 +43,10 @@ class AdminHomeScreen extends StatelessWidget {
       bottomNavigationBar: const HomePageAdminFooter(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color(0xFF63a697),
-        child: const Icon(Icons.home),
+        child: const Icon(
+          Icons.home,
+          color: Color(0xFFf9faf8),
+        ),
         onPressed: () {},
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:quinart/component/appbar/home_appbar.dart';
-import 'package:quinart/component/home_page/drawer/drawer.dart';
 import 'package:quinart/component/footer/admin_footer.dart';
 import 'package:quinart/component/footer/home_button.dart';
 import 'basic_info.dart';
@@ -30,7 +29,6 @@ class HealthCheckScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const HomeAppBar(),
-      endDrawer: const HomePageDrawer(),
       body: ListView.builder(
         itemCount: kuinaPageTitles.length,
         itemBuilder: (context, index) {

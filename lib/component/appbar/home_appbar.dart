@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../view/account_page/account_page.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({super.key});
@@ -17,7 +18,6 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         ],
       ),
       child: AppBar(
-        backgroundColor: const Color(0xFFf9faf8),
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Image.asset(
@@ -29,12 +29,15 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         actions: [
           IconButton(
             icon: const Icon(
-              Icons.article,
+              Icons.person,
               color: Color(0xFF53a697),
               size: 40,
             ),
             onPressed: () {
-              Scaffold.of(context).openEndDrawer();
+              Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MyPage()),
+            );
             },
           ),
           const SizedBox(width: 8),

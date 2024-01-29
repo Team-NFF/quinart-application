@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quinart/component/home_page/drawer/drawer.dart';
 import 'package:quinart/component/home_page/header/header.dart';
 import 'package:quinart/component/appbar/home_appbar.dart';
 import 'package:quinart/component/home_page/main_button/map.dart';
@@ -15,22 +14,21 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: HomeAppBar(),
-      endDrawer: HomePageDrawer(),
       body: Stack(
         children: [
           HomePageHeader(),
           MapButton(
-            top: 220,
+            top: 235,
             left: 20,
             right: 170,
           ),
           CallButton(
-            top: 220,
+            top: 235,
             left: 170,
             right: 20,
           ),
           Positioned(
-            top: 335,
+            top: 345,
             left: 0,
             right: 0,
             child: GreenDivider(),

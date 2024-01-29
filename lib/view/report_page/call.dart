@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 import 'package:quinart/component/appbar/home_appbar.dart';
-import 'package:quinart/component/home_page/drawer/drawer.dart';
-import 'package:quinart/component/footer/footer.dart';
+import 'package:quinart/component/footer/admin_footer.dart';
 import 'package:quinart/component/footer/home_button.dart';
 import 'package:quinart/component/slider_button/report_slider.dart';
 
@@ -46,7 +45,6 @@ class ReportScreenState extends State<ReportScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const HomeAppBar(),
-      endDrawer: const HomePageDrawer(),
       body: Center(
         child: ReportSliderButton(
           isButtonExpanded: _isButtonExpanded,
@@ -69,7 +67,7 @@ class ReportScreenState extends State<ReportScreen>
           },
         ),
       ),
-      bottomNavigationBar: const HomePageFooter(),
+      bottomNavigationBar: const HomePageAdminFooter(),
       floatingActionButton: const FooterHomeButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
