@@ -3,7 +3,6 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:quinart/component/appbar/home_appbar.dart';
-import 'package:quinart/component/home_page/drawer/drawer.dart';
 // import 'package:quinart/component/footer/footer.dart';
 import 'package:quinart/component/footer/admin_footer.dart';
 import 'package:quinart/component/footer/home_button.dart';
@@ -38,7 +37,6 @@ class MapScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: const HomeAppBar(),
-      endDrawer: const HomePageDrawer(),
       body: FlutterMap(
         options: const MapOptions(
           initialCenter: LatLng(26.526505783682545, 128.0300361181478),
